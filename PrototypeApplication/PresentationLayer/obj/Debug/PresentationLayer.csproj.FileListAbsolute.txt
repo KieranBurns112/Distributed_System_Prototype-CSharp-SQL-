@@ -1,0 +1,14 @@
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\PresentationLayer.exe.config
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\PresentationLayer.exe
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\PresentationLayer.pdb
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\MainWindow.g.cs
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\App.g.cs
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PresentationLayer_MarkupCompile.cache
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PresentationLayer_MarkupCompile.lref
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\MainWindow.baml
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PresentationLayer.g.resources
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.Cache
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PresentationLayer.exe
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PresentationLayer.pdb

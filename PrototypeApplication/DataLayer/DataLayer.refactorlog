@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="e654cc26-7f52-4725-b239-3d65386e0486" ChangeDateTime="11/03/2019 18:47:16">
+    <Property Name="ElementName" Value="[dbo].[Inventory].[PurchaseDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Inventory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ItemName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a955b27b-6963-4207-a648-8ac94e81d426" ChangeDateTime="11/03/2019 18:49:08">
+    <Property Name="ElementName" Value="[dbo].[Inventory].[price]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Inventory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ItemPrice" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="12a03ab0-4f61-40cd-8731-2ab309e992da" ChangeDateTime="11/03/2019 19:00:54">
+    <Property Name="ElementName" Value="[dbo].[Inventory].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Inventory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ItemId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2267177a-ea39-40e9-9f35-9d1d7ffb04dc" ChangeDateTime="11/03/2019 19:01:02">
+    <Property Name="ElementName" Value="[dbo].[Accounting].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Accounting]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PurchaseId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3ce410f4-3009-461b-9980-a651a337211b" ChangeDateTime="11/03/2019 19:04:36">
+    <Property Name="ElementName" Value="[dbo].[Accounting].[TotalPurchasedItems]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Accounting]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NumberOfItems" />
+  </Operation>
+</Operations>

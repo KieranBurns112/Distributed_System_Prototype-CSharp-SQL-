@@ -1,0 +1,21 @@
+﻿<Window x:Class="PresentationLayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PresentationLayer"
+        mc:Ignorable="d"
+        Title="DE-Store" Height="335" Width="490">
+    <Grid Margin="0,0,2,-1" Height="320">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="PriceControlNavButton" Content="Price Control" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" Width="200" FontSize="16" Height="65" Click="PriceControlNavButton_Click"/>
+        <Button x:Name="LoyaltyCardNavButton" Content="Loyalty Card" HorizontalAlignment="Left" Margin="25,115,0,0" VerticalAlignment="Top" Width="200" FontSize="16" Height="65" Click="LoyaltyCardNavButton_Click"/>
+        <Button x:Name="ReportsAndAnalysisNavButton" Content="Reports &amp; Analysis" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" FontSize="16" Height="65" Margin="25,205,0,0" Click="ReportsAndAnalysisNavButton_Click"/>
+        <Button x:Name="InventoryControlNavButton" Content="Inventory Control" HorizontalAlignment="Left" Margin="250,25,0,0" VerticalAlignment="Top" Width="200" FontSize="16" Height="65" Click="InventoryControlNavButton_Click"/>
+        <Button x:Name="FinanceApprovalNavButton" Content="Finance Approval" HorizontalAlignment="Left" Margin="250,115,0,0" VerticalAlignment="Top" Width="200" FontSize="16" Height="65" Click="FinanceApprovalNavButton_Click"/>
+        <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" FontSize="16" Height="65" Margin="250,205,0,0" Click="ExitButton_Click"/>
+
+    </Grid>
+</Window>
