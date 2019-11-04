@@ -1,0 +1,15 @@
+﻿<Window x:Class="PresentationLayer.PriceControlSingleItem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PresentationLayer"
+        mc:Ignorable="d"
+        Title="PriceControlSingleItem" Height="300" Width="285">
+    <Grid>
+        <Button x:Name="BackButton" Content="&lt;- Back" HorizontalAlignment="Left" Margin="25,220,0,0" VerticalAlignment="Top" Width="100" FontSize="16" Height="30" Click="BackButton_Click"/>
+        <Button x:Name="ConfirmButton" Content="Confirm" HorizontalAlignment="Left" Margin="150,220,0,0" VerticalAlignment="Top" Width="100" FontSize="16" Height="30" Click="ConfirmButton_Click"/>
+        <TextBox x:Name="PriceBox" HorizontalAlignment="Left" Height="26" Margin="25,53,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="225"/>
+
+    </Grid>
+</Window>

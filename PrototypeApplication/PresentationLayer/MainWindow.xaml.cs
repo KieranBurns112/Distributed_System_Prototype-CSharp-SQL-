@@ -27,32 +27,34 @@ namespace PresentationLayer
 
         private void PriceControlNavButton_Click(object sender, RoutedEventArgs e)
         {
-
+            PriceControl priceControl = new PriceControl();
+            priceControl.Show();
+            this.Close();
         }
 
         private void InventoryControlNavButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Not Yet Implemented");
         }
 
         private void LoyaltyCardNavButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Not Yet Implemented");
         }
 
         private void FinanceApprovalNavButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Not Yet Implemented");
         }
 
         private void ReportsAndAnalysisNavButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Not Yet Implemented");
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            this.Close();
         }
     }
 }

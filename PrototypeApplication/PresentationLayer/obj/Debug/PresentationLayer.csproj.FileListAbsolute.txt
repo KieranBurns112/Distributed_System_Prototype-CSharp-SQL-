@@ -12,3 +12,9 @@ C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\Pre
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.Cache
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PresentationLayer.exe
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PriceControl.g.cs
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PriceControl.baml
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\BusinessLayer.dll
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PriceControlSingleItem.g.cs
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PriceControlSingleItem.baml
