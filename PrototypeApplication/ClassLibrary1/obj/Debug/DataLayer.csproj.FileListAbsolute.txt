@@ -1,0 +1,8 @@
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\ClassLibrary1\bin\Debug\DESystemDatabase.mdf
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\ClassLibrary1\bin\Debug\DESystemDatabase_log.ldf
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\ClassLibrary1\bin\Debug\ClassLibrary1.dll.config
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\ClassLibrary1\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

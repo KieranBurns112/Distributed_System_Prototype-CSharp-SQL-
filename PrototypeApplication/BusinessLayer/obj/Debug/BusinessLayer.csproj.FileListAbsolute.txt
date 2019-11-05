@@ -3,3 +3,8 @@ C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\Bus
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\BusinessLayer\bin\Debug\DESystemDatabase.mdf
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\BusinessLayer\bin\Debug\DESystemDatabase_log.ldf
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\BusinessLayer\bin\Debug\ClassLibrary1.dll
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\BusinessLayer\bin\Debug\ClassLibrary1.pdb
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\BusinessLayer\bin\Debug\BusinessLayer.dll.config

@@ -5,11 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"
-        Title="PriceControlSingleItem" Height="300" Width="285">
+        Title="DE-Store" Height="300" Width="285">
     <Grid>
         <Button x:Name="BackButton" Content="&lt;- Back" HorizontalAlignment="Left" Margin="25,220,0,0" VerticalAlignment="Top" Width="100" FontSize="16" Height="30" Click="BackButton_Click"/>
         <Button x:Name="ConfirmButton" Content="Confirm" HorizontalAlignment="Left" Margin="150,220,0,0" VerticalAlignment="Top" Width="100" FontSize="16" Height="30" Click="ConfirmButton_Click"/>
-        <TextBox x:Name="PriceBox" HorizontalAlignment="Left" Height="26" Margin="25,53,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="225"/>
+        <TextBox x:Name="PriceBox" HorizontalAlignment="Left" Height="26" Margin="25,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Text="0.00"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="25,136,0,0" VerticalAlignment="Top" Width="225" Height="26" Background="White"/>
+        <Label x:Name="ItemNameLabel" Content="Item Name Here" HorizontalAlignment="Center" Margin="25,25,27,0" FontSize="20" VerticalAlignment="Top" Width="225"/>
+        <Label x:Name="label" Content="Price (£):" HorizontalAlignment="Left" Margin="25,62,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="24" Width="225"/>
+        <Label x:Name="label_Copy" Content="Offer:" HorizontalAlignment="Left" Margin="25,112,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="24" Width="225"/>
 
     </Grid>
 </Window>

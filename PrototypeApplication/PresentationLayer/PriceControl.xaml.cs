@@ -35,10 +35,17 @@ namespace PresentationLayer
 
         private void PriceControlListBox_Loaded(object sender, RoutedEventArgs e)
         {
+            //Default loading message since the database takes time to load and is inconsistent
+            PriceControlListBox.Items.Add("Loading...");
+
             //Load the Data for the table from database 
-            dbConnection accessData = new dbConnection();
+            DataCommunication accessData = new DataCommunication();
             ListBox toFill = accessData.loadPriceControlData();
 
+            //Clear default loading message
+            PriceControlListBox.Items.Clear();
+
+            //Add loaded data to listbox
             foreach (var thisItem in toFill.Items)
             {
                 PriceControlListBox.Items.Add(thisItem);
@@ -49,9 +56,12 @@ namespace PresentationLayer
         {
             int selectedItemId = PriceControlListBox.SelectedIndex;
 
-            PriceControlSingleItem priceControlSingleItem = new PriceControlSingleItem(selectedItemId);
-            priceControlSingleItem.Show();
-            this.Close();
+            if(selectedItemId > 0)
+            {
+                PriceControlSingleItem priceControlSingleItem = new PriceControlSingleItem(selectedItemId);
+                priceControlSingleItem.Show();
+                this.Close();
+            }
         }
     }
 }

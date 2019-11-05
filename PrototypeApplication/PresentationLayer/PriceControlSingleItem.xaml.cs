@@ -23,7 +23,7 @@ namespace PresentationLayer
         {
             InitializeComponent();
 
-            PriceBox.Text = itemId.ToString();
+            //PriceBox.Text = 
         }
 
         private void ConfirmButton_Click(object sender, RoutedEventArgs e)
