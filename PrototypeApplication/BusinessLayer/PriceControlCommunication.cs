@@ -12,41 +12,7 @@ namespace BusinessLayer
 {
     public class PriceControlCommunication
     {   
-        private string getOfferName(int offerInt)
-        {
-            string standardOffer;
-
-            //Get plaintext name for standard offer type
-            if (offerInt == 1)
-            {
-                standardOffer = "Buy 1 Get 1 Free";
-            }
-            else
-            {
-                standardOffer = "No Offer";
-            }
-
-            return standardOffer;
-        }
-
-        private string getLoyaltyRewardName(int loyaltyInt)
-        {
-            string loyaltyOffer;
         
-            //Get plaintext name for standard offer type
-            if (loyaltyInt == 1)
-            {
-                loyaltyOffer = "50% Off";
-            }
-            else
-            {
-                loyaltyOffer = "No Offer";
-            }
-
-            return loyaltyOffer;
-        }
-
-
         public ListBox loadPriceControlData()
         {
             ListBox toFill = new ListBox();
@@ -56,20 +22,79 @@ namespace BusinessLayer
             string sp = "   -   "; //Uniform spacing between items in listbox
             string addItem;
 
+            //Load class with written names for offer types (instead of Id's)
+            StandardAndLoyaltyOffers offers = new StandardAndLoyaltyOffers();
 
+            //Heading for listbox's first line
             toFill.Items.Add("Item Id" + sp + "Item Name" + sp + "Price" + sp + "Standard Offer" + sp + "Loyalty Offer" + sp + "Stock");
+
             foreach (DataRow row in dbItems.Rows)
             {
-
-
-                //Add all parts together to make full name
-                addItem = row[0] + sp + row[1] + sp + row[2] + sp + getOfferName(Int32.Parse(row[3].ToString())) + sp +
-                    getLoyaltyRewardName(Int32.Parse(row[4].ToString())) + sp + row[5];
+                //Add all parts together to make full lines that each align [[ALIGNMENT MODIFICATIONS REQUIRED!!!]]
+                addItem = row[0] + sp + row[1] + sp + row[2] + sp + offers.getOfferName(Int32.Parse(row[3].ToString())) + sp +
+                    offers.getLoyaltyName(Int32.Parse(row[4].ToString())) + sp + row[5];
 
                 toFill.Items.Add(addItem);
             }
 
             return toFill;
+        }
+
+        public inventoryItem getSingleItem(int itemId)
+        {
+            inventoryItem requestedItem = new inventoryItem();
+
+            try
+            {
+                dbQuery dbConnect = new dbQuery();
+                DataTable dbRequest = dbConnect.requestInventoryItem(itemId);
+
+                requestedItem.Item_Id = Int32.Parse((dbRequest.Rows[0][0]).ToString());
+                requestedItem.Item_Name = (dbRequest.Rows[0][1]).ToString();
+                requestedItem.Item_Price = decimal.Parse((dbRequest.Rows[0][2]).ToString());
+                requestedItem.Standard_Offer = Int32.Parse((dbRequest.Rows[0][3]).ToString());
+                requestedItem.Loyalty_Offer = Int32.Parse((dbRequest.Rows[0][4]).ToString());
+                requestedItem.Item_Stock = Int32.Parse((dbRequest.Rows[0][0]).ToString());
+            }
+            catch
+            {
+                requestedItem.Item_Id = 0;
+            }
+           
+            return requestedItem;
+        }
+
+        public bool validatePrice(string priceData)
+        {
+            bool priceIsValid = false;
+
+            try
+            {
+                decimal price = decimal.Parse(priceData);
+
+                //min price is £0.01, max price is £9999.99 in database
+                if (price > 0 && price < 10000)
+                {
+                    string[] decimalPointSplit = priceData.Split(new char[] { '.' });
+                    int numAfterSplit = decimalPointSplit[1].Length;
+                    if (numAfterSplit == 2)
+                    {
+                        priceIsValid = true;
+                    }
+                }
+            }
+            catch{}
+
+            return priceIsValid;
+        }
+
+        public void sendDetailsToUpdate(int id, string validatedPriceData, int offerNo)
+        {
+            decimal price = decimal.Parse(validatedPriceData);
+
+            dbQuery updateDB = new dbQuery();
+            updateDB.updateItemPrice(id, price);
+            updateDB.updateItemStandardOffer(id, offerNo);
         }
     }
 }

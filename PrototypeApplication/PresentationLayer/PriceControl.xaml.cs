@@ -39,7 +39,7 @@ namespace PresentationLayer
             PriceControlListBox.Items.Add("Loading...");
 
             //Load the Data for the table from database 
-            DataCommunication accessData = new DataCommunication();
+            PriceControlCommunication accessData = new PriceControlCommunication();
             ListBox toFill = accessData.loadPriceControlData();
 
             //Clear default loading message
@@ -60,8 +60,8 @@ namespace PresentationLayer
             {
                 PriceControlSingleItem priceControlSingleItem = new PriceControlSingleItem(selectedItemId);
                 priceControlSingleItem.Show();
-                this.Close();
-            }
+                this.Close(); 
+           }
         }
     }
 }
