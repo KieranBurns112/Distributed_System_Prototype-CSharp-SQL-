@@ -8,6 +8,14 @@ using System.Threading.Tasks;
 
 namespace DataLayer
 {
+    /// <summary>
+    /// 
+    /// Kieran Burns - 40272382
+    /// 
+    /// Class containing a method to query the database, and methods with each possiblely required
+    /// querry to communicate with the database to both send and recieve information.
+    /// 
+    /// </summary>
     public class dbQuery
     {
 
@@ -58,18 +66,21 @@ namespace DataLayer
 
         public void updateItemPrice(int itemId, decimal newPrice)
         {
+            //Send query to database
             string query = "UPDATE inventory SET Price=" + newPrice + " WHERE ItemId=" + itemId;
             queryDatabase(query);
         }
 
         public void updateItemStandardOffer(int itemId, int newOffer)
         {
+            //Send query to database
             string query = "UPDATE inventory SET StandardOffer=" + newOffer + " WHERE ItemId=" + itemId;
             queryDatabase(query);
         }
 
         public void updateItemLoyaltyOffer(int itemId, int newLoyalty)
         {
+            //Send query to database
             string query = "UPDATE inventory SET LoyaltyOffer=" + newLoyalty + " WHERE ItemId=" + itemId;
             queryDatabase(query);
         }

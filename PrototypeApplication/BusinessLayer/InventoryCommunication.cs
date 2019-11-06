@@ -34,10 +34,13 @@ namespace BusinessLayer
             //Load class with written names for offer types (instead of Id's)
             StandardAndLoyaltyOffers offers = new StandardAndLoyaltyOffers();
 
+            //"formType" refers to the form that calls the function, 0 is PriceControl,
+            //1 is LoyaltyCard.
             if (formType == 0)
             {
                 toFill.Items.Add("Item Id" + sp + "Item Name" + sp + "Price" + sp + "Standard Offer");
 
+                //Populate requested listbox with formatted data.
                 foreach (DataRow row in dbItems.Rows)
                 {
                     addItem = row[0] + sp + row[1] + sp + "£" + row[2] + sp + offers.getOfferName(Int32.Parse(row[3].ToString()));
@@ -48,6 +51,7 @@ namespace BusinessLayer
             {
                 toFill.Items.Add("Item Id" + sp + "Item Name" + sp + "Loyalty Offer");
 
+                //Populate requested listbox with formatted data.
                 foreach (DataRow row in dbItems.Rows)
                 {
                     addItem = row[0] + sp + row[1] + sp + offers.getLoyaltyName(Int32.Parse(row[4].ToString()));
@@ -55,6 +59,7 @@ namespace BusinessLayer
                 }
             }
 
+            //Return the requested data.
             return toFill;
         }
 
@@ -64,6 +69,8 @@ namespace BusinessLayer
 
             try
             {
+                //Attempt to populate an instance of the "inventoryItem" class with the information requested from
+                //the database.
                 dbQuery dbConnect = new dbQuery();
                 DataTable dbRequest = dbConnect.requestInventoryItem(itemId);
 
@@ -76,6 +83,8 @@ namespace BusinessLayer
             }
             catch
             {
+                //If "inventoryItem" is not properly populated, return a 0 as item Id
+                //(read as an error by the PresentationLayer).
                 requestedItem.Item_Id = 0;
             }
            
@@ -90,7 +99,7 @@ namespace BusinessLayer
             {
                 decimal price = decimal.Parse(priceData);
 
-                //min price is £0.01, max price is £9999.99 in database
+                //min price is £0.01, max price is £9999.99 in database.
                 if (price > 0 && price < 10000)
                 {
                     string[] decimalPointSplit = priceData.Split(new char[] { '.' });
@@ -108,6 +117,7 @@ namespace BusinessLayer
 
         public void sendPriceControlToUpdate(int id, string validatedPriceData, int offerNo)
         {
+            //Send altered PriceControl form to database to update information.
             decimal price = decimal.Parse(validatedPriceData);
 
             dbQuery updateDB = new dbQuery();
@@ -117,6 +127,7 @@ namespace BusinessLayer
 
         public void sendLoyaltyToUpdate(int id, int loyaltyNo)
         {
+            //Send altered LoyaltyCard information to database.
             dbQuery updateDB = new dbQuery();
             updateDB.updateItemLoyaltyOffer(id, loyaltyNo);
         }
