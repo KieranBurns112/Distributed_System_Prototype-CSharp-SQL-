@@ -6,13 +6,22 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer
 {
+    /// <summary>
+    /// 
+    /// Kieran Burns - 40272382
+    /// 
+    /// Class containing all offer types to be accessed by the BusinessLayer and PresentationLayer
+    /// when translating numerical offer type information from the database to written form, as well
+    /// as when populating the offer selection ComboBoxes.
+    /// 
+    /// </summary>
     public class StandardAndLoyaltyOffers
     {
         private string[] offerTypes = new[] {"No Offer", "Buy 1 Get 1 Free", "3 for 2", "Free Delivery Charges"};
         private string[] loyaltyTypes = new[] { "No Offer", "10% Off", "25% Off", "50% Off"}; 
 
         public string getOfferName(int offerInt)
-        {
+        { 
             string standardOffer;
             if (offerInt > offerTypes.Length || offerInt < 0)
             {

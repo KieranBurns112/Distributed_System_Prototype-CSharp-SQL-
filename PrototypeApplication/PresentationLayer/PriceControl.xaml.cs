@@ -17,7 +17,15 @@ using System.Data.Common;
 namespace PresentationLayer
 {
     /// <summary>
-    /// Interaction logic for PriceControl.xaml
+    /// 
+    /// Kieran Burns - 40272382
+    /// 
+    /// Interaction Logic for the page which displays Id, Name, Price and Standard Offer types of each item in 
+    /// the Inventory.
+    /// 
+    /// This page contains a listbox to display each of the above details, which can be clicked on to progress to 
+    /// the inidividual page for the clicked on item, as well as a button to return to the previous page.
+    /// 
     /// </summary>
     public partial class PriceControl : Window
     {
@@ -28,6 +36,7 @@ namespace PresentationLayer
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
+            //Return to the previous page, closing this one.
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
@@ -35,11 +44,11 @@ namespace PresentationLayer
 
         private void PriceControlListBox_Loaded(object sender, RoutedEventArgs e)
         {
-            //Load the Data for the table from database 
+            //Load the Data for the table from database. 
             InventoryCommunication accessData = new InventoryCommunication();
             ListBox toFill = accessData.loadInventoryData(0);
 
-            //Add loaded data to listbox
+            //Add loaded data to listbox.
             foreach (var thisItem in toFill.Items)
             {
                 PriceControlListBox.Items.Add(thisItem);
@@ -48,10 +57,13 @@ namespace PresentationLayer
 
         private void PriceControlListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            //If an item is clicked on, save the item to a variable.
             int selectedItemId = PriceControlListBox.SelectedIndex;
 
+            //If the selected item is a valid item from the database (and not the header of the listbox).
             if(selectedItemId > 0)
             {
+                //Open the page with the inidividual details of the clicked on item, closing this page.
                 PriceControlSingleItem priceControlSingleItem = new PriceControlSingleItem(selectedItemId);
                 priceControlSingleItem.Show();
                 this.Close(); 

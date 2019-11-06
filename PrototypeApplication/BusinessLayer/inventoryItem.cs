@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer
 {
+    /// <summary>
+    /// 
+    /// Kieran Burns - 40272382
+    /// 
+    /// Class with Get Set values for each heading in the Inventory database, to be used
+    /// when passing "raw" database rows from the BusinessLayer to the PresentationLayer.
+    /// 
+    /// </summary>
     public class inventoryItem
     {
         private int _itemId;

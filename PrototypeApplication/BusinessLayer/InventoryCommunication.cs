@@ -10,6 +10,15 @@ using System.Data;
 
 namespace BusinessLayer
 {
+    /// <summary>
+    /// 
+    /// Kieran Burns - 40272382
+    /// 
+    /// Class used in communicating between the PresentationLayer and DataLayer where the Inventory
+    /// table of the database is concerned. Also contains the method for validating a modified item price
+    /// to ensure it is the correct format for the database.
+    /// 
+    /// </summary>
     public class InventoryCommunication
     {   
         
