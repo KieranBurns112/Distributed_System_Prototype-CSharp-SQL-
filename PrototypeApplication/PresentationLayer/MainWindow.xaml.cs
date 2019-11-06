@@ -16,7 +16,14 @@ using System.Windows.Shapes;
 namespace PresentationLayer
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// 
+    /// Kieran Burns - 40272382
+    /// 
+    /// Interaction Logic for the Main "Hub" page of the application.
+    /// 
+    /// This page serves the purpose of allowing the user to navigate to each of the five individual
+    /// segregated features of this prototype, each segregated for the sake of individual demonstration.
+    /// 
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -27,6 +34,7 @@ namespace PresentationLayer
 
         private void PriceControlNavButton_Click(object sender, RoutedEventArgs e)
         {
+            //Load and display the Price Control page, closing this one.
             PriceControl priceControl = new PriceControl();
             priceControl.Show();
             this.Close();
@@ -39,6 +47,7 @@ namespace PresentationLayer
 
         private void LoyaltyCardNavButton_Click(object sender, RoutedEventArgs e)
         {
+            //Load and display the Loyalty Offers page, closing this one.
             LoyaltyCardItemList loyaltyCard = new LoyaltyCardItemList();
             loyaltyCard.Show();
             this.Close();
@@ -56,6 +65,7 @@ namespace PresentationLayer
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
+            //Quit the application.
             this.Close();
         }
     }

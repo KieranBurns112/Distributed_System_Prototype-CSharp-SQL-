@@ -16,7 +16,18 @@ using BusinessLayer;
 namespace PresentationLayer
 {
     /// <summary>
-    /// Interaction logic for LoyaltyCardSingleItem.xaml
+    /// 
+    /// Kieran Burns - 40272382
+    /// 
+    /// Interaction Logic for the page which allows the user to modify the active loyalty offer of a selected item.
+    /// 
+    /// This page contains a dropdown box to use when selecting a new offer to replace the active one,
+    /// as well as buttons to return to the previous page, and to confirm the new selection.
+    /// 
+    /// This page closely resembles that of "PriceControlSingleItem", as the two would be part of the same page under
+    /// most normal circumstances, however these two features are listed as seperate on the project specification 
+    /// so are seperated in practice.
+    /// 
     /// </summary>
     public partial class LoyaltyCardSingleItem : Window
     {
