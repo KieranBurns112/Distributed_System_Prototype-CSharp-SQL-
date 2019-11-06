@@ -29,10 +29,10 @@ namespace PresentationLayer
             passedInId = itemId;
             InitializeComponent();
 
-            PriceControlCommunication dataCommunication = new PriceControlCommunication();
+            InventoryCommunication dataCommunication = new InventoryCommunication();
             inventoryItem requestedItem = new inventoryItem();
 
-            requestedItem = dataCommunication.getSingleItem(passedInId);
+            requestedItem = dataCommunication.getSingleItemById(passedInId);
 
             if (requestedItem.Item_Id == 0)
             {
@@ -74,14 +74,14 @@ namespace PresentationLayer
                 int selectedOfferNo = offerComboBox.SelectedIndex;
 
                 //Load class with price validation and send to DB methods
-                PriceControlCommunication validateAndSend = new PriceControlCommunication();
+                InventoryCommunication validateAndSend = new InventoryCommunication();
 
                 //check if price is valid
                 bool priceValid = validateAndSend.validatePrice(priceBoxContent);
 
                 if (priceValid)
                 {
-                    validateAndSend.sendDetailsToUpdate(passedInId, priceBoxContent, selectedOfferNo);
+                    validateAndSend.sendPriceControlToUpdate(passedInId, priceBoxContent, selectedOfferNo);
 
                     MessageBox.Show("Details Updated!");
                 }

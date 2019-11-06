@@ -8,8 +8,8 @@ namespace BusinessLayer
 {
     public class StandardAndLoyaltyOffers
     {
-        private string[] offerTypes = new[] {"No Offer", "Buy 1 Get 1 Free"};
-        private string[] loyaltyTypes = new[] { "No Offer", "50% Off"}; 
+        private string[] offerTypes = new[] {"No Offer", "Buy 1 Get 1 Free", "3 for 2", "Free Delivery Charges"};
+        private string[] loyaltyTypes = new[] { "No Offer", "10% Off", "25% Off", "50% Off"}; 
 
         public string getOfferName(int offerInt)
         {

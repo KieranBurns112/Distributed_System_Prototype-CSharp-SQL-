@@ -39,7 +39,9 @@ namespace PresentationLayer
 
         private void LoyaltyCardNavButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Not Yet Implemented");
+            LoyaltyCardItemList loyaltyCard = new LoyaltyCardItemList();
+            loyaltyCard.Show();
+            this.Close();
         }
 
         private void FinanceApprovalNavButton_Click(object sender, RoutedEventArgs e)

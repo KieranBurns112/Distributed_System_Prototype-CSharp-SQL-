@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\App.xaml
-3-14773027
+5-988747127
 
-112104885087
+13908920095
 14-679639115
-MainWindow.xaml;PriceControl.xaml;PriceControlSingleItem.xaml;
+LoyaltyCardItemList.xaml;LoyaltyCardSingleItem.xaml;MainWindow.xaml;PriceControl.xaml;PriceControlSingleItem.xaml;
 
-False
+True
 

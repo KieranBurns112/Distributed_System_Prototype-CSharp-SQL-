@@ -35,15 +35,9 @@ namespace PresentationLayer
 
         private void PriceControlListBox_Loaded(object sender, RoutedEventArgs e)
         {
-            //Default loading message since the database takes time to load and is inconsistent
-            PriceControlListBox.Items.Add("Loading...");
-
             //Load the Data for the table from database 
-            PriceControlCommunication accessData = new PriceControlCommunication();
-            ListBox toFill = accessData.loadPriceControlData();
-
-            //Clear default loading message
-            PriceControlListBox.Items.Clear();
+            InventoryCommunication accessData = new InventoryCommunication();
+            ListBox toFill = accessData.loadInventoryData(0);
 
             //Add loaded data to listbox
             foreach (var thisItem in toFill.Items)
