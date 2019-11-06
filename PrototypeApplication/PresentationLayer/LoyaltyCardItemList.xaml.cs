@@ -47,7 +47,14 @@ namespace PresentationLayer
 
         private void LoyaltyListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            int selectedItemId = LoyaltyListBox.SelectedIndex;
 
+            if (selectedItemId > 0)
+            {
+                LoyaltyCardSingleItem loyaltyCardSingleItem = new LoyaltyCardSingleItem(selectedItemId);
+                loyaltyCardSingleItem.Show();
+                this.Close();
+            }
         }
     }
 }

@@ -13,11 +13,13 @@ namespace DataLayer
 
         private DataTable queryDatabase(string query)
         { 
-            //Local version of the connection string for when it does the finicky thing
-           // string DEDatabaseConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\evilr\\Desktop\\Software-Architecture-Coursework\\PrototypeApplication\\ClassLibrary1\\DESystemDatabase.mdf;Integrated Security=True";
-            
-            //Variable used to connect to local SQL database, could be substituted for a securely stored external database in a real-world version of the system
+            //Variable used to connect the local SQL database, could be substituted for a securely stored external database in a real-world version of the system
             string DEDatabaseConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DESystemDatabase.mdf;Integrated Security=True";
+
+                //[[[[Sometimes the |DataDirectory| doesn't work.]]]]
+                //Below is the hardcoded path for development [[TO BE REMOVED BEFORE SUBMISSION]].
+                //"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\evilr\\Desktop\\Software-Architecture-Coursework\\PrototypeApplication\\ClassLibrary1\\DESystemDatabase.mdf;Integrated Security=True";
+
 
             //Create DataTable to hold contents of query
             DataTable queriedItem = new DataTable();
@@ -63,6 +65,12 @@ namespace DataLayer
         public void updateItemStandardOffer(int itemId, int newOffer)
         {
             string query = "UPDATE inventory SET StandardOffer=" + newOffer + " WHERE ItemId=" + itemId;
+            queryDatabase(query);
+        }
+
+        public void updateItemLoyaltyOffer(int itemId, int newLoyalty)
+        {
+            string query = "UPDATE inventory SET LoyaltyOffer=" + newLoyalty + " WHERE ItemId=" + itemId;
             queryDatabase(query);
         }
     }

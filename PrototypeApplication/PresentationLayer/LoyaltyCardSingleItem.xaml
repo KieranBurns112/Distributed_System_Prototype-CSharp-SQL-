@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"
-        Title="LoyaltyCardSingleItem" Height="300" Width="300">
+        Title="DE-Store" Height="300" Width="285">
     <Grid>
-        
+        <Button x:Name="BackButton" Content="&lt;- Back" HorizontalAlignment="Left" Margin="25,220,0,0" VerticalAlignment="Top" Width="100" FontSize="16" Height="30" Click="BackButton_Click"/>
+        <Button x:Name="ConfirmButton" Content="Confirm" HorizontalAlignment="Left" Margin="150,220,0,0" VerticalAlignment="Top" Width="100" FontSize="16" Height="30" Click="ConfirmButton_Click"/>
+        <ComboBox x:Name="offerComboBox" HorizontalAlignment="Left" Margin="25,86,0,0" VerticalAlignment="Top" Width="225" Height="26" Background="White"/>
+        <Label x:Name="ItemNameLabel" Content="INVALID ITEM" HorizontalAlignment="Center" Margin="25,25,27,0" FontSize="20" VerticalAlignment="Top" Width="225"/>
+        <Label x:Name="label_Copy" Content="Loyalty Offer:" HorizontalAlignment="Left" Margin="25,62,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="24" Width="225"/>
+
     </Grid>
 </Window>

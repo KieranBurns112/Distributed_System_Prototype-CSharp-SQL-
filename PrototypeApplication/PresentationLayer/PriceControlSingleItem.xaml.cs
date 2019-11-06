@@ -20,7 +20,6 @@ namespace PresentationLayer
     /// </summary>
     public partial class PriceControlSingleItem : Window
     {
-
         private int passedInId = 0;
         private bool itemLoaded = false;
 
@@ -61,7 +60,6 @@ namespace PresentationLayer
        
                 itemLoaded = true;
             }
-
         }
 
         private void ConfirmButton_Click(object sender, RoutedEventArgs e)

@@ -106,12 +106,11 @@ namespace BusinessLayer
             updateDB.updateItemStandardOffer(id, offerNo);
         }
 
-        /*
         public void sendLoyaltyToUpdate(int id, int loyaltyNo)
         {
             dbQuery updateDB = new dbQuery();
             updateDB.updateItemLoyaltyOffer(id, loyaltyNo);
         }
-        */
+        
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"
-        Title="LoyaltyCardItemList" Height="425" Width="650">
+        Title="DE-Store" Height="425" Width="650">
     <Grid>
         <Button x:Name="BackButton" Content="&lt;- Back" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" Width="100" FontSize="16" Height="30" Click="BackButton_Click"/>
         <Label x:Name="PageHeading" Content="Loyalty Card" HorizontalAlignment="Center" Margin="251,25,241,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="24"/>

@@ -20,9 +20,9 @@ C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\Pre
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\PriceControlSingleItem.baml
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\ClassLibrary1.dll
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\ClassLibrary1.pdb
-C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\DESystemDatabase.mdf
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\LoyaltyCardItemList.g.cs
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\LoyaltyCardSingleItem.g.cs
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\LoyaltyCardItemList.baml
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\LoyaltyCardSingleItem.baml
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\DESystemDatabase.mdf
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\DESystemDatabase_log.ldf
