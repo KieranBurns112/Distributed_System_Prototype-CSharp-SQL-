@@ -36,3 +36,5 @@ C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\Pre
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\ReportsAndAnalysis.baml
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\DataLayer.dll
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\DataLayer.pdb
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\DESystemDatabase.mdf
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\DESystemDatabase_log.ldf

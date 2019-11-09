@@ -84,15 +84,15 @@ namespace PresentationLayer
         private void disconnectButton_Click(object sender, RoutedEventArgs e)
         {
             if (portalConnected)
-            {
+            {   
+                //Close connection to the portal.
+                currentConnection.Close();
+
                 //Clear log box for new message.
                 ConnectionLogListBox.Items.Clear();
 
                 //Confirm Connection is closing.
                 ConnectionLogListBox.Items.Add("Disconnecting from Portal...");
-                
-                //Close connection to the portal.
-                currentConnection.Close();
 
                 //Clear the support messages between the portal and user.
                 LiveSupportListBox.Items.Clear();

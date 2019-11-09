@@ -43,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountingCommunication.cs" />
-    <Compile Include="CentralInventoryRequestFormulation.cs" />
     <Compile Include="inventoryItem.cs" />
     <Compile Include="InventoryCommunication.cs" />
     <Compile Include="StockMessageFormulation.cs" />

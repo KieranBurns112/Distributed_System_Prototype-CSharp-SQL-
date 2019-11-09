@@ -23,10 +23,10 @@ namespace DataLayer
 
         private DataTable queryDatabase(string query)
         {
-            //Create DataTable to hold contents of query
+            //Create DataTable to hold contents of query.
             DataTable queriedItem = new DataTable();
 
-            //Open database, fill DataTable with result of query, then close database
+            //Open database, fill DataTable with result of query, then close database.
             SqlConnection DESystemDatabase = new SqlConnection(DEDatabaseConnectionString);
             DESystemDatabase.Open();
             SqlCommand command = new SqlCommand(query, DESystemDatabase);
@@ -34,58 +34,58 @@ namespace DataLayer
             adapter.Fill(queriedItem);
             DESystemDatabase.Close();
 
-            //Return the filled DataTable
+            //Return the filled DataTable.
             return queriedItem;
         }
 
         public DataTable allInventoryItems()
         {
-            //Send query to database
+            //Send query to database.
             string query = "SELECT * FROM inventory";
             DataTable itemsToPass = queryDatabase(query);
 
-            //Return the DataTable
+            //Return the DataTable.
             return itemsToPass;
         }
 
         public DataTable requestInventoryItem(int itemId)
         {
-            //Send query to database
+            //Send query to database.
             string query = "SELECT * FROM inventory WHERE ItemId=" + itemId;
             DataTable requestedItem = queryDatabase(query);
 
-            //Return the DataTable
+            //Return the DataTable.
             return requestedItem;
         }
 
         public void updateItemPrice(int itemId, decimal newPrice)
         {
-            //Send query to database
+            //Send query to database.
             string query = "UPDATE inventory SET Price=" + newPrice + " WHERE ItemId=" + itemId;
             queryDatabase(query);
         }
 
         public void updateItemStandardOffer(int itemId, int newOffer)
         {
-            //Send query to database
+            //Send query to database.
             string query = "UPDATE inventory SET StandardOffer=" + newOffer + " WHERE ItemId=" + itemId;
             queryDatabase(query);
         }
 
         public void updateItemLoyaltyOffer(int itemId, int newLoyalty)
         {
-            //Send query to database
+            //Send query to database.
             string query = "UPDATE inventory SET LoyaltyOffer=" + newLoyalty + " WHERE ItemId=" + itemId;
             queryDatabase(query);
         }
 
         public DataTable allAccountingRecords()
         {
-            //Send query to database
+            //Send query to database.
             string query = "SELECT * FROM accounting";
             DataTable itemsToPass = queryDatabase(query);
 
-            //Return the DataTable
+            //Return the DataTable.
             return itemsToPass;
         }
     }
