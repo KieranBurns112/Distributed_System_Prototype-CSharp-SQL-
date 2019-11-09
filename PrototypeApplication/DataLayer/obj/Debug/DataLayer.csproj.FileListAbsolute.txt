@@ -4,3 +4,4 @@ C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\Dat
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\DataLayer\obj\Debug\DataLayer.pdb
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\DataLayer\bin\Debug\DESystemDatabase.mdf
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\DataLayer\bin\Debug\DESystemDatabase_log.ldf
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
