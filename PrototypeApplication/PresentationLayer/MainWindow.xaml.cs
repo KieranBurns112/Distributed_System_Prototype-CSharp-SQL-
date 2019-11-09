@@ -81,7 +81,10 @@ namespace PresentationLayer
 
         private void ReportsAndAnalysisNavButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Not Yet Implemented");
+            //Load and display the Reports and Analysis page, closing this one.
+            ReportsAndAnalysis reportsAndAnalysis = new ReportsAndAnalysis();
+            reportsAndAnalysis.Show();
+            this.Close();
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)

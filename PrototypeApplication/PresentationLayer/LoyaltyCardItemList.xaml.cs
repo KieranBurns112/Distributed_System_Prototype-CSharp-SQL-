@@ -48,7 +48,7 @@ namespace PresentationLayer
         {
             //Load the Data for the table from database. 
             InventoryCommunication accessData = new InventoryCommunication();
-            ListBox toFill = accessData.loadInventoryData(1);
+            ListBox toFill = accessData.loadInventoryData(2);
 
             //Add loaded data to listbox.
             foreach (var thisItem in toFill.Items)

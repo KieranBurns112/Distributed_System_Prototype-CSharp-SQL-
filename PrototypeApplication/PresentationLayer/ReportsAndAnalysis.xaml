@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationLayer"
         mc:Ignorable="d"
-        Title="ReportsAndAnalysis" Height="300" Width="300">
+        Title="DE-System" Height="300" Width="680">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="Title" Content="Reports and Analysis" HorizontalAlignment="Center" Margin="198,25,169,0" FontSize="20" VerticalAlignment="Top" Width="225"/>
+        <Label x:Name="label_Copy" Content="Total Earnings:" HorizontalAlignment="Left" Margin="25,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="totalEarnings" Content="£0.00" HorizontalAlignment="Left" Margin="22,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="label_Copy1" Content="Total Items Sold:" HorizontalAlignment="Left" Margin="22,137,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="totalItemsSold" Content="0" HorizontalAlignment="Left" Margin="22,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="label_Copy2" Content="Total Customers:" HorizontalAlignment="Left" Margin="22,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="totalCustomers" Content="0" HorizontalAlignment="Left" Margin="22,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="label_Copy3" Content="Earnings over past 12 months:" HorizontalAlignment="Left" Margin="235,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="label_Copy4" Content="Earnings against 12 months prior:" HorizontalAlignment="Left" Margin="442,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.666,0.407" Height="27" Width="210"/>
+        <Label x:Name="past12Earnings" Content="£0.00" HorizontalAlignment="Left" Margin="235,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="label_Copy5" Content="Items Sold over past 12 months:" HorizontalAlignment="Left" Margin="235,137,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="past12Sold" Content="0" HorizontalAlignment="Left" Margin="235,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="label_Copy6" Content="Customers over past 12 months:" HorizontalAlignment="Left" Margin="235,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="past12Customers" Content="0" HorizontalAlignment="Left" Margin="232,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="percentageEarnings" Content="0%" HorizontalAlignment="Left" Margin="442,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="label_Copy7" Content="Items Sold against 12 months prior:" HorizontalAlignment="Left" Margin="442,137,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="percentageSold" Content="0%" HorizontalAlignment="Left" Margin="442,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="label_Copy8" Content="Customers against 12 months prior:" HorizontalAlignment="Left" Margin="442,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Label x:Name="percentageCustomers" Content="0%" HorizontalAlignment="Left" Margin="442,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.665,0.36" Height="27" Width="210"/>
+        <Button x:Name="BackButton" Content="&lt;- Back" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" Width="100" FontSize="16" Height="30" Click="BackButton_Click"/>
+
     </Grid>
 </Window>

@@ -1,5 +1,0 @@
-C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\DataLayer\bin\Debug\DataLayer.dacpac
-C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\DataLayer\bin\Debug\DataLayer.dll
-C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\DataLayer\bin\Debug\DataLayer.pdb
-C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\DataLayer\obj\Debug\DataLayer.dll
-C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\DataLayer\obj\Debug\DataLayer.pdb

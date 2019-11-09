@@ -42,12 +42,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountingCommunication.cs" />
     <Compile Include="CentralInventoryRequestFormulation.cs" />
-    <Compile Include="DESystemDatabaseDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DESystemDatabaseDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="inventoryItem.cs" />
     <Compile Include="InventoryCommunication.cs" />
     <Compile Include="StockMessageFormulation.cs" />
@@ -61,28 +57,17 @@
     <Compile Include="StandardAndLoyaltyOffers.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\DataLayer.csproj">
-      <Project>{66bf2e08-9083-42de-8df9-93858b40caf4}</Project>
-      <Name>DataLayer</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
-    <None Include="DESystemDatabaseDataSet.xsc">
-      <DependentUpon>DESystemDatabaseDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DESystemDatabaseDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DESystemDatabaseDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DESystemDatabaseDataSet.xss">
-      <DependentUpon>DESystemDatabaseDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{25bf7180-aff5-4c35-95cf-f61bacfa8bfd}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
