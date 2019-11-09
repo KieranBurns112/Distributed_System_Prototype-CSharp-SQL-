@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,6 +56,36 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CentralInventoryRequests.xaml.cs">
+      <DependentUpon>CentralInventoryRequests.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EnablingPortal.xaml.cs">
+      <DependentUpon>EnablingPortal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceApproval.xaml.cs">
+      <DependentUpon>FinanceApproval.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerMobileMessageBox.xaml.cs">
+      <DependentUpon>ManagerMobileMessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsAndAnalysis.xaml.cs">
+      <DependentUpon>ReportsAndAnalysis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StockMonitor.xaml.cs">
+      <DependentUpon>StockMonitor.xaml</DependentUpon>
+    </Compile>
+    <Page Include="CentralInventoryRequests.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EnablingPortal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FinanceApproval.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LoyaltyCardItemList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -81,11 +112,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ManagerMobileMessageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PriceControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PriceControlSingleItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReportsAndAnalysis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StockMonitor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

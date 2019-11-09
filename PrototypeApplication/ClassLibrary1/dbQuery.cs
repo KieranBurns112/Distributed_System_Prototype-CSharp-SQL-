@@ -18,17 +18,11 @@ namespace DataLayer
     /// </summary>
     public class dbQuery
     {
+        //Variable used to connect the local SQL database, could be substituted for a securely stored external database in a real-world version of the system.
+        private string DEDatabaseConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DESystemDatabase.mdf;Integrated Security=True";                                                  
 
         private DataTable queryDatabase(string query)
-        { 
-            //Variable used to connect the local SQL database, could be substituted for a securely stored external database in a real-world version of the system
-            string DEDatabaseConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DESystemDatabase.mdf;Integrated Security=True";
-
-                //[[[[Sometimes the |DataDirectory| doesn't work.]]]]
-                //Below is the hardcoded path for development [[TO BE REMOVED BEFORE SUBMISSION]].
-                //"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\evilr\\Desktop\\Software-Architecture-Coursework\\PrototypeApplication\\ClassLibrary1\\DESystemDatabase.mdf;Integrated Security=True";
-
-
+        {
             //Create DataTable to hold contents of query
             DataTable queriedItem = new DataTable();
 
@@ -44,7 +38,7 @@ namespace DataLayer
             return queriedItem;
         }
 
-        public DataTable priceControlItems()
+        public DataTable allInventoryItems()
         {
             //Send query to database
             string query = "SELECT * FROM inventory";
@@ -83,6 +77,16 @@ namespace DataLayer
             //Send query to database
             string query = "UPDATE inventory SET LoyaltyOffer=" + newLoyalty + " WHERE ItemId=" + itemId;
             queryDatabase(query);
+        }
+
+        public DataTable allAccountingItmes()
+        {
+            //Send query to database
+            string query = "SELECT * FROM inventory";
+            DataTable itemsToPass = queryDatabase(query);
+
+            //Return the DataTable
+            return itemsToPass;
         }
     }
 }

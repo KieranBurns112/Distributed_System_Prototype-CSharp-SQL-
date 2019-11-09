@@ -27,6 +27,13 @@ namespace PresentationLayer
     /// </summary>
     public partial class MainWindow : Window
     {
+        //"StoreId" is used to refer to each instance of DE-Store. Within this prototype, only a single
+        //instance exists, however as a fully distributed system, a login system would be used, which is
+        //where "StoreId" would be nessisary. "StoreId" is only used as an identifier for mock messages 
+        //sent to the mockup of the Central Inventory system when making an automated request for more 
+        //stock when an item's stock is empty within this prototype.
+        public int StoreId = 1;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -42,7 +49,18 @@ namespace PresentationLayer
 
         private void InventoryControlNavButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Not Yet Implemented");
+            //Load and display the Inventory Management pages, closing this page.
+            StockMonitor stockMonitor = new StockMonitor();
+            stockMonitor.Show();
+
+            //Both "central" and "manager" are used to exemplify external applications, outwith DE-System, to which
+            //DE-System can send messages to.
+            CentralInventoryRequests central = new CentralInventoryRequests(StoreId);
+            central.Show();
+            ManagerMobileMessageBox manager = new ManagerMobileMessageBox();
+            manager.Show();
+
+            this.Close();
         }
 
         private void LoyaltyCardNavButton_Click(object sender, RoutedEventArgs e)
@@ -55,7 +73,10 @@ namespace PresentationLayer
 
         private void FinanceApprovalNavButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Not Yet Implemented");
+            //Load and display the Finance Approval page, closing this one.
+            FinanceApproval financeApproval = new FinanceApproval(StoreId);
+            financeApproval.Show();
+            this.Close();
         }
 
         private void ReportsAndAnalysisNavButton_Click(object sender, RoutedEventArgs e)
@@ -65,8 +86,8 @@ namespace PresentationLayer
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            //Quit the application.
-            this.Close();
+            //Fully Quit the application.
+            Application.Current.Shutdown();
         }
     }
 }

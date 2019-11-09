@@ -23,7 +23,6 @@ namespace BusinessLayer
         private int _loyaltyOffer;
         private int _itemStock;
 
-
         public int Item_Id
         {
             get

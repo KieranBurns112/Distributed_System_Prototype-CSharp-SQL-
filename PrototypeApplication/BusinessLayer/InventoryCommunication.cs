@@ -21,21 +21,22 @@ namespace BusinessLayer
     /// </summary>
     public class InventoryCommunication
     {   
-        
+
         public ListBox loadInventoryData(int formType)
         {
             ListBox toFill = new ListBox();
-
             dbQuery dbConnect = new dbQuery();
-            DataTable dbItems = dbConnect.priceControlItems();
-            string sp = "   -   "; //Uniform spacing between items in listbox
+            DataTable dbItems = dbConnect.allInventoryItems();
+            string sp = "   -   "; //Uniform spacing between "columns" in listbox.
             string addItem;
 
-            //Load class with written names for offer types (instead of Id's)
+            //Load class with written names for offer types (instead of Id's).
             StandardAndLoyaltyOffers offers = new StandardAndLoyaltyOffers();
 
-            //"formType" refers to the form that calls the function, 0 is PriceControl,
-            //1 is LoyaltyCard.
+            //"formType" refers to the form which called the function; 
+            //0 is PriceControl,
+            //1 is StockMonitor
+            //2 is LoyaltyCard.
             if (formType == 0)
             {
                 toFill.Items.Add("Item Id" + sp + "Item Name" + sp + "Price" + sp + "Standard Offer");
@@ -48,6 +49,17 @@ namespace BusinessLayer
                 }
             }
             else if (formType == 1)
+            {
+                toFill.Items.Add("Item Id" + sp + "Item Name" + sp + "Stock");
+
+                //Populate requested listbox with formatted data.
+                foreach (DataRow row in dbItems.Rows)
+                {
+                    addItem = row[0] + sp + row[1] + sp + row[5];
+                    toFill.Items.Add(addItem);
+                }
+            }
+            else if (formType == 2)
             {
                 toFill.Items.Add("Item Id" + sp + "Item Name" + sp + "Loyalty Offer");
 
@@ -79,7 +91,7 @@ namespace BusinessLayer
                 requestedItem.Item_Price = decimal.Parse((dbRequest.Rows[0][2]).ToString());
                 requestedItem.Standard_Offer = Int32.Parse((dbRequest.Rows[0][3]).ToString());
                 requestedItem.Loyalty_Offer = Int32.Parse((dbRequest.Rows[0][4]).ToString());
-                requestedItem.Item_Stock = Int32.Parse((dbRequest.Rows[0][0]).ToString());
+                requestedItem.Item_Stock = Int32.Parse((dbRequest.Rows[0][5]).ToString());
             }
             catch
             {
@@ -89,6 +101,21 @@ namespace BusinessLayer
             }
            
             return requestedItem;
+        }
+
+        public int inventoryItemCount()
+        {
+            //Method to loop through each item in the database, to count how many items there are.
+            int itemCounter = 0;
+            dbQuery dbConnect = new dbQuery();
+            DataTable dbItems = dbConnect.allInventoryItems();
+
+            foreach (DataRow row in dbItems.Rows)
+            {
+                itemCounter++;
+            }
+
+            return itemCounter;
         }
 
         public bool validatePrice(string priceData)
@@ -130,7 +157,6 @@ namespace BusinessLayer
             //Send altered LoyaltyCard information to database.
             dbQuery updateDB = new dbQuery();
             updateDB.updateItemLoyaltyOffer(id, loyaltyNo);
-        }
-        
+        }  
     }
 }

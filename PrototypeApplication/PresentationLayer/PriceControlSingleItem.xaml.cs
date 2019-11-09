@@ -120,6 +120,5 @@ namespace PresentationLayer
             priceControl.Show();
             this.Close();
         }
-
     }
 }

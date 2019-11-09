@@ -24,5 +24,15 @@ C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\Pre
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\LoyaltyCardSingleItem.g.cs
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\LoyaltyCardItemList.baml
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\LoyaltyCardSingleItem.baml
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\CentralInventoryRequests.g.cs
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\ManagerMobileMessageBox.g.cs
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\StockMonitor.g.cs
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\CentralInventoryRequests.baml
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\ManagerMobileMessageBox.baml
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\StockMonitor.baml
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\FinanceApproval.g.cs
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\FinanceApproval.baml
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\EnablingPortal.g.cs
+C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\obj\Debug\EnablingPortal.baml
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\DESystemDatabase.mdf
 C:\Users\evilr\Desktop\Software-Architecture-Coursework\PrototypeApplication\PresentationLayer\bin\Debug\DESystemDatabase_log.ldf

@@ -1,0 +1,16 @@
+﻿<Window x:Class="PresentationLayer.EnablingPortal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PresentationLayer"
+        mc:Ignorable="d"
+        Title="Enabling Portal Support Reponse" Height="300" Width="365" Closing="Window_Closing">
+    <Grid>
+        <ListBox x:Name="LiveSupportListBox" HorizontalAlignment="Left" Height="150" Margin="25,62,0,0" VerticalAlignment="Top" Width="307"/>
+        <Label x:Name="subHeading" Content="Connected User Support:" HorizontalAlignment="Center" Margin="63,25,63,0" VerticalAlignment="Top" Height="37" Width="231" FontSize="20" RenderTransformOrigin="-1.785,2.378"/>
+        <Button x:Name="sendButton" Content="Send" HorizontalAlignment="Left" Margin="232,212,0,0" VerticalAlignment="Top" Width="100" FontSize="16" Height="30" RenderTransformOrigin="5.44,14.167" Click="sendButton_Click"/>
+        <TextBox x:Name="ChatInput" HorizontalAlignment="Left" Height="30" Margin="25,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" FontSize="18"/>
+
+    </Grid>
+</Window>
